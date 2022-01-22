@@ -30,9 +30,17 @@ class _LoginDemoState extends State<LoginDemo>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
+
+
       appBar: AppBar(
-        title: const Text("User Login")
+        title: const Text("User Login"),
+        titleTextStyle: const TextStyle(
+          fontFamily: "Oswald",
+          fontSize: 40.0,
+          fontWeight: FontWeight.w700,
+          color: Colors.white
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -101,7 +109,8 @@ class _LoginDemoState extends State<LoginDemo>{
                    style: TextStyle(
                      color: Colors.white,
                      fontSize: 20,
-                     fontWeight: FontWeight.w600
+                     fontWeight: FontWeight.w600,
+                     fontFamily: "Oswald"
                    ),
                  ),
               ),
